@@ -276,12 +276,12 @@ export default function App() {
             <div className="flex-1 bg-slate-900 rounded-lg p-4 text-white font-mono text-sm overflow-hidden flex flex-col justify-end relative">
                <div className="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-green-400 via-slate-900 to-slate-900"></div>
                <div className="relative z-10 space-y-1">
-                 <div className="text-green-400">> Backend router connected.</div>
-                 <div className="text-slate-300">> OSMnx graph loaded with {routeStats.scanned} nodes.</div>
+                 <div className="text-green-400">&gt; Backend router connected.</div>
+                 <div className="text-slate-300">&gt; OSMnx graph loaded with {routeStats.scanned} nodes.</div>
                  {routeStats.isolated > 0 && (
-                   <div className="text-red-400">> ALERT: {routeStats.isolated} intersections found with CA flood polygon.</div>
+                   <div className="text-red-400">&gt; ALERT: {routeStats.isolated} intersections found with CA flood polygon.</div>
                  )}
-                 <div className="text-blue-300">> NetworkX Shortest Path re-calculated in {inferenceTime}ms.</div>
+                 <div className="text-blue-300">&gt; NetworkX Shortest Path re-calculated in {inferenceTime}ms.</div>
                </div>
             </div>
 
